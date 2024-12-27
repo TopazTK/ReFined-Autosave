@@ -1,0 +1,8 @@
+title: Re:Fined Autosave
+originalAuthor: TopazTK
+description: An Autosave Lua Script for KHIIFM that mimics the Autosave found in Kingdom Hearts Re:Fined.
+assets:
+- name: scripts/ReFinedAutosave.lua
+  method: copy
+  source:
+  - name: scripts/ReFinedAutosave.lua

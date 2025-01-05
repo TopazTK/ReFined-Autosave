@@ -173,39 +173,39 @@ function ExecuteSave()
 end
 
 function _OnInit()
-    if ReadString(0x9A9830, 0x04) == 'KH2J' then
+    if ReadString(0x09A98B0, 0x04) == 'KH2J' then
         ADDR_Area = 0x717008
-        ADDR_Reset = 0xABABDA
-        ADDR_Title = 0x7169B4
-        ADDR_SaveData = 0x9A9830
-        ADDR_LoadFlag = 0x9BA850
-        ADDR_PauseFlag = 0x717418
-        ADDR_BattleFlag = 0x2A11384
+        ADDR_Reset = 0x0ABAC5A
+        ADDR_Title = 0x07169B4
+        ADDR_SaveData = 0x09A98B0
+        ADDR_LoadFlag = 0x09BA8D0
+        ADDR_PauseFlag = 0x0717418
+        ADDR_BattleFlag = 0x2A11404
 
-        PINT_EventInfo = 0x2A113F8
+        PINT_EventInfo = 0x2A11478
         PINT_SaveInformation = 0x079CAD0
 
         SAVE_SUFFIX = "\\KHIIFM_WW.png"
 
         IS_INIT = true
-        ConsolePrint("Re:Fined Style Autosave - Initialized! | STEAM 1.0.0.9")
-    elseif ReadString(0x9A92F0, 0x04) == 'KH2J' then
+        ConsolePrint("Re:Fined Style Autosave - Initialized! | STEAM 1.0.0.10")
+    elseif ReadString(0x09A9330, 0x04) == 'KH2J' then
 
         ADDR_Area = 0x716DF8
-        ADDR_Reset = 0xABA69A
-        ADDR_Title = 0x7167A4
-        ADDR_SaveData = 0x9A92F0
-        ADDR_LoadFlag = 0x9BA310
-        ADDR_PauseFlag = 0x717208
-        ADDR_BattleFlag = 0x2A10E44
+        ADDR_Reset = 0x0ABA6DA
+        ADDR_Title = 0x07167A4
+        ADDR_SaveData = 0x09A9330
+        ADDR_LoadFlag = 0x09BA350
+        ADDR_PauseFlag = 0x0717208
+        ADDR_BattleFlag = 0x2A10E84
 
-        PINT_EventInfo = 0x2A10EB8
-        PINT_SaveInformation = 0x2B0C200
+        PINT_EventInfo = 0x2A10EF8
+        PINT_SaveInformation = 0x2B0C240
 
         SAVE_SUFFIX = "\\KHIIFM.png"
 
         IS_INIT = true
-        ConsolePrint("Re:Fined Style Autosave - Initialized! | EPIC 1.0.0.9")
+        ConsolePrint("Re:Fined Style Autosave - Initialized! | EPIC 1.0.0.10")
     end
 end
 
